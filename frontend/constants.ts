@@ -11,5 +11,7 @@ function fromEnv(x): string {
 }
 
 export const NODE_ENV = process.env.NODE_ENV
+export const GRAPHQL_URL = process.env.GRAPHQL_URL
 
 assert(NODE_ENV, 'NODE_ENV')
+assert(NODE_ENV, 'GRAPHQL_URL')
