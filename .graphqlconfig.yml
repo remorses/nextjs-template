@@ -1,0 +1,17 @@
+overwrite: true
+schema: http://localhost:8090
+schemaPath: nextjs/schema.graphql
+
+documents: ./nextjs/*.gql
+generates:
+    ./nextjs/schema.graphql:
+        - schema-ast
+    ./nextjs/support/generatedGraphql.ts:
+        plugins:
+            - 'typescript'
+            - 'typescript-operations'
+            - 'typescript-graphql-request'
+    # ./api/src/generatedGraphql.ts:
+    #     plugins:
+    #         - 'typescript'
+    #         - 'typescript-operations'

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "lib": [
+      "DOM",
+      "ES2015"
+    ],
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}
