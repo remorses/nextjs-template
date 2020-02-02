@@ -6,7 +6,9 @@
         "dev": "next dev",
         "build": "next build",
         "anal": "ANALYZE=1 next build",
-        "start": "next start"
+        "start": "next start",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook"
     },
     "dependencies": {
         "@types/node": "^13.5.3",
@@ -19,8 +21,15 @@
         "styled-components": "^5.0.0"
     },
     "devDependencies": {
+        "@babel/core": "^7.8.4",
         "@next/bundle-analyzer": "^9.2.1",
+        "@storybook/addon-actions": "^5.3.10",
+        "@storybook/addon-links": "^5.3.10",
+        "@storybook/addons": "^5.3.10",
+        "@storybook/react": "^5.3.10",
+        "babel-loader": "^8.0.6",
         "babel-plugin-styled-components": "^1.10.7",
+        "babel-preset-react-app": "^9.1.1",
         "dotenv": "^8.2.0",
         "find-config": "^1.0.0",
         "typescript": "^3.7.5"
